@@ -28,7 +28,6 @@ class StringTest(unittest.TestCase):
 
        self.assertCountEqual(self.solution.findSubstring(s, words), [0, 3, 6])
 
-
     def test_string_5(self):
         s = ""
         words = []
@@ -51,7 +50,7 @@ class StringTest(unittest.TestCase):
         words = ["aa","aa","aa"]
 
         self.assertEqual(self.solution.findSubstring(s, words), [0, 1, 2])
-    def test_string_7(self):
+    def test_string_75(self):
         s = "aaa"
         words = ["aa","aa"]
 
@@ -60,13 +59,13 @@ class StringTest(unittest.TestCase):
     def test_string_8(self):
         s = "aaa"
         words = ["a","b"]
-
         self.assertEqual(self.solution.findSubstring(s, words), [])
-    def test_string_8(self):
+
+    def test_string_85(self):
         s = "ababaab"
         words = ["ab","ba","ba"]
-
         self.assertEqual(self.solution.findSubstring(s, words), [1])
+
     def test_string_9(self):
         s = "abababab"
         words = ["a","b","a"]
@@ -75,8 +74,13 @@ class StringTest(unittest.TestCase):
     def test_string_10(self):
         s = "abababab"
         words = ["ab","ab","ab"]
+        self.assertEqual(self.solution.findSubstring(s, words), [0, 2])
 
-        self.assertEqual(self.solution.findSubstring(s, words), [0, 2, 4])
+    def test_string_11(self):
+        s = "mississippi"
+        words = ["si","is"]
+        self.assertEqual(self.solution.findSubstring(s, words), [1,4])
+
 def main():
     unittest.main()
 
