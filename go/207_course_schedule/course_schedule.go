@@ -3,54 +3,85 @@ package course_schedule
 import "fmt"
 
 // Graph : represents a Graph
-type Graph struct {
-    nodes []*GraphNode
-}
+//type Graph struct {
+    //nodes []*GraphNode
+//}
 
- //GraphNode : represents a Graph node
-type GraphNode struct {
-    id    int
-    edges map[int]int
-}
+ ////GraphNode : represents a Graph node
+//type GraphNode struct {
+    //id    int
+    //edges map[int]int
+//}
 
-func NewGraph() *Graph {
-    return &Graph{
-        nodes: []*GraphNode{},
-    }
-}
+//func newNode (id int) *GraphNode {
+    //return &GraphNode{
+        //id: id,
+        //edges: make(map[int]int),
+    //}
+//}
 
-func (g *Graph) AddNode(id int) () {
-    id = len(g.nodes)
-    g.nodes = append(g.nodes, &GraphNode{
-        id:    id,
-        edges: make(map[int]int),
-    })
-    return
-}
+//func NewGraph() *Graph {
+    //return &Graph{
+        //nodes: []*GraphNode{},
+    //}
+//}
 
-func (g *Graph) GetNodeFromValue(val int) (node *GraphNode, is_found bool) {
-    for _, element := range g.nodes {
-        if element.id == val{
-            return element, true
+//func (g *Graph) AddNode(id int) () {
+    //id = len(g.nodes)
+    //g.nodes = append(g.nodes, &GraphNode{
+        //id:    id,
+        //edges: make(map[int]int),
+    //})
+    //return
+//}
+
+//func (g *Graph) GetNodeFromValue(val int) (node *GraphNode, is_found bool) {
+    //for _, element := range g.nodes {
+        //if element.id == val{
+            //return element, true
+        //}
+    //}
+    //return node, false
+//}
+
+//func (g* Graph) printGraph() {
+    //for _, element := range g.nodes {
+        //fmt.Println(element.id, element.edges)
+    //}
+    //return
+//}
+
+func toposort (adjList map[int][]int, visited map[int]bool, src int) map[int]bool {
+    visited[src] = true
+    for _, i := range adjList[src] {
+        if visited[i] == false{
+            visited = toposort(adjList, visited, i)
         }
     }
-    return node, false
+    return visited
 }
 
 func canFinish(numCourses int, prerequisites [][]int) bool {
-    crsPreReqGraph := NewGraph()
+    var adjList = make(map[int][]int, len(prerequisites))
+    var visited = make(map[int]bool, 0)
 
-    for _, element := range prerequisites{
-        src := element[0]
-        dest := element[1]
-        fmt.Println(src, dest)
+    fmt.Println(adjList[1])
+    for _, element := range prerequisites {
+        src := element[1]
+        dest := element[0]
 
-        node, is_found := crsPreReqGraph.GetNodeFromValue(src)
-
-        if is_found == false {
-            prerequisites.AddNode()
+        if len(adjList[src]) == 0{
+            adjList[src] = []int{dest}
+        } else {
+            adjList[src] = append(adjList[src], dest)
         }
 
+        visited[src] = false
+        visited[dest] = false
     }
+
+    visited = toposort(adjList, visited, 0)
+
+    fmt.Println(visited)
     return false
 }
