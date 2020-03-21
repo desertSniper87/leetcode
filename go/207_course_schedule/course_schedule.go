@@ -17,7 +17,6 @@ func getIncomingEdges(graph map[int][]int, vertex int) []int {
 
 func isCycle(graph map[int][]int, inDegree map[int]int, numCourses int) bool {
 
-	fmt.Println("inDegree: ", inDegree)
 	queue := make([]int, 0)
 	for i := 0; i < numCourses; i++ {
 		if inDegree[i] == 0 {
