@@ -14,7 +14,7 @@ class Solution {
         Set<Character> taskSet = new HashSet<>(taskList);
 
 
-        for(Character s: taskSet){
+        for(Character s: taskSet) {
             System.out.println(s + " " + Collections.frequency(taskList, s));
         }
 
