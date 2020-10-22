@@ -1,7 +1,6 @@
 package com.github.desertsniper87;
 
 import java.util.*;
-import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -11,10 +10,8 @@ class Solution {
 
 
         Stream<Character> taskPipeline = taskString.chars().mapToObj(c -> (char) c);
-        Supplier<Stream<Character>> streamSupplier = () -> taskPipeline;
-
-        Set<Character> taskSet = streamSupplier.get().collect(Collectors.toSet());
-        List<Character> taskList = streamSupplier.get().collect(Collectors.toList());
+        List<Character> taskList = taskPipeline.collect(Collectors.toList());
+        Set<Character> taskSet = new HashSet<>(taskList);
 
 
         for(Character s: taskSet){
