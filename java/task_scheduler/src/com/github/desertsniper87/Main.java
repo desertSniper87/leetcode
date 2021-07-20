@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-class Solution {
+class Solution {ope
     public int leastInterval(char[] tasks, int n) {
         String taskString = new String(tasks);
 
@@ -13,10 +13,15 @@ class Solution {
         List<Character> taskList = taskPipeline.collect(Collectors.toList());
         Set<Character> taskSet = new HashSet<>(taskList);
 
+        Queue<Character> taskQueue = new PriorityQueue<>((character, t1) -> );
 
-        for(Character s: taskSet) {
-            System.out.println(s + " " + Collections.frequency(taskList, s));
+        for(Character task: taskList) {
+            System.out.println(task + " " + Collections.frequency(taskList, task));
+            taskQueue.add()
         }
+
+
+
 
 
         return 0;
