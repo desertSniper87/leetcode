@@ -12,6 +12,7 @@ class TreeNode:
 
 class Solution:
     def allPossibleFBT(self, n: int) -> List[TreeNode]:
+        print("n: ", n)
         result: List[TreeNode] = []
 
         if n < 1:
@@ -19,9 +20,11 @@ class Solution:
         if n == 1:
             return [TreeNode(0)]
 
-        for left_sbtree_n in range(n):
+        for left_sbtree_n in range(1, n):
+            print("left_subtree")
             left_subtree = self.allPossibleFBT(left_sbtree_n)
-            right_subtree = self.allPossibleFBT(n - left_sbtree_n)
+            print("right_subtree")
+            right_subtree = self.allPossibleFBT(n - (left_sbtree_n +  1))
 
             for left_treenode in left_subtree:
                 for right_treenode in right_subtree:
@@ -31,7 +34,7 @@ class Solution:
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.allPossibleFBT(2))
+    print(list(map(lambda x: x.val, s.allPossibleFBT(7))))
 
 
 
