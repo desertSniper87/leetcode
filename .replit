@@ -1,0 +1,2 @@
+language = "python3"
+run = "python3 find-first-and-last-position-of-element-in-sorted-array.py"
