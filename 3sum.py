@@ -3,53 +3,35 @@ import time
 
 class Solution:
     def threeSum(self, nums):
-        start_time = time.time()
+        nums.sort()
+        ln = len(nums)
+        res = []
 
-        l = len(nums)
-        res = {}
+        for i in range(ln - 2):
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+            l, r = i + 1, ln - 1
 
-        if l < 3:
-            return []
-        # elif not sum(nums) and len(set(nums)) == 1:
-        #     return [[0, 0, 0]]
+            while l < r:
+                s = nums[i] + nums[l] + nums[r]
+                if s < 0:
+                    l += 1
+                elif s > 0:
+                    r -= 1
+                else:
+                    res.append([nums[i], nums[l], nums[r]])
+                    while l < r and nums[l] == nums[l + 1]:
+                        l += 1
+                    while l < r and nums[r] == nums[r - 1]:
+                        r -= 1
+                    l += 1
+                    r -= 1
 
-        nums = sorted(nums)
-        l = len(nums)
-
-        print("--- l = len(nums) ---")
-        print("--- %s seconds ---" % (time.time() - start_time))
-
-        # for m in range(l):
-        #     for n in range(m + 2, l):
-        #         if nums[n] == nums[m] and nums[n] != 0:
-        #             nums[n] = None
-
-        # nums = list(filter(lambda x: x is not None, nums))
-
-        for i in range(l):
-            for j in range(i + 1, l):
-                for k in range(j + 1, l):
-                    print(f"Loop start: {i}, {j}, {k}")
-                    item = [nums[i], nums[j], nums[k]]
-                    print("--- %s seconds ---" % (time.time() - start_time))
-                    if sum(item) > 0:
-                        break
-                    elif sum(item) == 0:
-                        if not res.get(nums[i]):
-                            res[nums[i]] = set()
-                        res[nums[i]].add((nums[j], nums[k]))
-
-        r = []
-
-        for k in res:
-            for v in res[k]:
-                r.append([k, v[0], v[1]])
-
-        return r
+        return res
 
 
 s = Solution()
-#
+
 # nums = [-1, 0, 1, 2, -1, -4]; print(s.threeSum(nums))
 # nums = [-4,-2,1,-5,-4,-4,4,-2,0,4,0,-2,3,1,-5,0]; print(s.threeSum(nums))
 # nums = [-4,-2,-2,-2,0,1,2,2,2,3,3,4,4,6,6]; print(s.threeSum(nums))
