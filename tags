@@ -1,0 +1,255 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/torsho/dev/leetcode/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+2HohDhemQ0Vo806X9bcaIYcxdBz	.idea/workspace.xml	/^  <component name="ProjectId" id="2HohDhemQ0Vo806X9bcaIYcxdBz" \/>$/;"	i
+DFSUtil	number-of-provinces.py	/^    def DFSUtil(self, temp, v):$/;"	m	class:Solution
+Default	.idea/workspace.xml	/^    <task active="true" id="Default" summary="Default task">$/;"	i
+Main	java/task_scheduler/src/com/github/desertsniper87/Main.java	/^public class Main {$/;"	c
+Node	unique-paths-iii.py	/^class Node:$/;"	c
+Solution	3sum.py	/^class Solution:$/;"	c
+Solution	all-possible-full-binary-trees.py	/^class Solution:$/;"	c
+Solution	array-partition-i.py	/^class Solution:$/;"	c
+Solution	binary-tree-inorder-traversal.py	/^class Solution(object):$/;"	c
+Solution	build-array-from-permutation.py	/^class Solution:$/;"	c
+Solution	buy-sell-stock.py	/^class Solution:$/;"	c
+Solution	coin-change.py	/^class Solution:$/;"	c
+Solution	construct-binary-search-tree-from-preorder-traversal.py	/^class Solution:$/;"	c
+Solution	container-with-most-water.py	/^class Solution:$/;"	c
+Solution	course-schedule-ii.py	/^class Solution:$/;"	c
+Solution	daily-temperatures.py	/^class Solution:$/;"	c
+Solution	deepest-leaves-sum.py	/^class Solution:$/;"	c
+Solution	find-first-and-last-position-of-element-in-sorted-array.py	/^class Solution:$/;"	c
+Solution	find-minimum-in-rotated-sorted-array.py	/^class Solution:$/;"	c
+Solution	group-the-people-given-the-group-size-they-belong-to.py	/^class Solution:$/;"	c
+Solution	hamming-distance.py	/^class Solution:$/;"	c
+Solution	house_robber.py	/^class Solution:$/;"	c
+Solution	java/task_scheduler/src/com/github/desertsniper87/Main.java	/^class Solution {ope$/;"	c
+Solution	keys-and-rooms.py	/^class Solution:$/;"	c
+Solution	longest-increasing-subsequence.py	/^class Solution:$/;"	c
+Solution	longest-substring-without-repeating-characters.py	/^class Solution:$/;"	c
+Solution	longest-univalue-path-new.py	/^class Solution:$/;"	c
+Solution	longest-univalue-path.py	/^class Solution:$/;"	c
+Solution	max-increase-to-keep-city-skyline.py	/^class Solution:$/;"	c
+Solution	maximum-product-subarray.py	/^class Solution:$/;"	c
+Solution	maximum-subarray.py	/^class Solution:$/;"	c
+Solution	median-of-two-sorted-arrays.py	/^class Solution:$/;"	c
+Solution	minimum-number-of-vertices-to-reach-all-nodes.py	/^class Solution:$/;"	c
+Solution	minimum-operations-to-make-array-equal.py	/^class Solution:$/;"	c
+Solution	number-of-provinces.py	/^class Solution:$/;"	c
+Solution	partition-labels.py	/^class Solution:$/;"	c
+Solution	partitioning-into-minimum-number-of-deci-binary-numbers.py	/^class Solution:$/;"	c
+Solution	permutations.py	/^class Solution:$/;"	c
+Solution	prime-palindrome.py	/^class Solution:$/;"	c
+Solution	search-in-rotated-sorted-array.py	/^class Solution:$/;"	c
+Solution	sort-colors.py	/^class Solution:$/;"	c
+Solution	subsets.py	/^class Solution:$/;"	c
+Solution	substring_with_concatenation_of_all_words.py	/^class Solution:$/;"	c
+Solution	transpose-matrix.py	/^class Solution:$/;"	c
+Solution	trapping_rain_water.py	/^class Solution:$/;"	c
+Solution	two-sum.py	/^class Solution:$/;"	c
+Solution	unique-paths-iii.py	/^class Solution:$/;"	c
+Solution	word_break.py	/^class Solution:$/;"	c
+StringTest	substring-with-concatenation-of-all-words-test.py	/^class StringTest(unittest.TestCase):$/;"	c
+Test	max-increase-to-keep-city-skyline.py	/^Test = TestCase()$/;"	v
+TestCanFinish_4	go/207_course_schedule/course_schedule_test.go	/^func TestCanFinish_4(t *testing.T) {$/;"	f	package:course_schedule
+Test_eval_1	go/evaluate-division/evaluate_division_test.go	/^func Test_eval_1(t *testing.T) {$/;"	f	package:calcEquation
+TreeNode	all-possible-full-binary-trees.py	/^class TreeNode:$/;"	c
+TreeNode	construct-binary-search-tree-from-preorder-traversal.py	/^class TreeNode:$/;"	c
+TreeNode	deepest-leaves-sum.py	/^class TreeNode:$/;"	c
+TreeNode	longest-univalue-path.py	/^class TreeNode:$/;"	c
+__init__	all-possible-full-binary-trees.py	/^    def __init__(self, val=0, left=None, right=None):$/;"	m	class:TreeNode
+__init__	construct-binary-search-tree-from-preorder-traversal.py	/^    def __init__(self, val=0, left=None, right=None):$/;"	m	class:TreeNode
+__init__	deepest-leaves-sum.py	/^    def __init__(self, val=0, left=None, right=None):$/;"	m	class:TreeNode
+__init__	longest-univalue-path.py	/^    def __init__(self, x):$/;"	m	class:TreeNode
+__init__	number-of-provinces.py	/^    def __init__(self):$/;"	m	class:Solution
+__init__	unique-paths-iii.py	/^    def __init__(self, val: int) -> None:$/;"	m	class:Node	typeref:typename:None
+__str__	construct-binary-search-tree-from-preorder-traversal.py	/^    def __str__(self) -> str:$/;"	m	class:TreeNode	typeref:typename:str
+allPossibleFBT	all-possible-full-binary-trees.py	/^    def allPossibleFBT(self, n: int) -> List[TreeNode]:$/;"	m	class:Solution	typeref:typename:List[TreeNode]
+arr	coin-change.2.py	/^arr = [1, 2, 5]$/;"	v
+arr	coin-change.3.py	/^arr = [1, 2, 5]$/;"	v
+arrayPairSum	array-partition-i.py	/^    def arrayPairSum(self, nums):$/;"	m	class:Solution
+assignNeighbor	unique-paths-iii.py	/^    def assignNeighbor(self, node: Node, direction) -> None:$/;"	m	class:Node	typeref:typename:None
+astronaut	journey-to-the-moon.py	/^    astronaut = []$/;"	v
+bstFromPreorder	construct-binary-search-tree-from-preorder-traversal.py	/^    def bstFromPreorder(self, preorder: List[int]) -> TreeNode:$/;"	m	class:Solution	typeref:typename:TreeNode
+buildArray	build-array-from-permutation.py	/^    def buildArray(self, nums: List[int]) -> List[int]:$/;"	m	class:Solution	typeref:typename:List[int]
+calcEquation	go/evaluate-division/evaluate_division.go	/^func calcEquation(equations [][]string, values []float64, queries [][]string) []float64 {$/;"	f	package:calcEquation	typeref:typename:[]float64
+calcEquation	go/evaluate-division/evaluate_division.go	/^package calcEquation$/;"	p
+calcEquation	go/evaluate-division/evaluate_division_test.go	/^package calcEquation$/;"	p
+canFinish	go/207_course_schedule/course_schedule.go	/^func canFinish(numCourses int, prerequisites [][]int) bool {$/;"	f	package:course_schedule	typeref:typename:bool
+canVisitAllRooms	keys-and-rooms.py	/^    def canVisitAllRooms(self, rooms: List[List[int]]) -> bool:$/;"	m	class:Solution	typeref:typename:bool
+check	go/evaluate-division/evaluate_division_test.go	/^func check(result []float64, want []float64, t *testing.T) {$/;"	f	package:calcEquation
+coinChange	coin-change.py	/^    def coinChange(self, coins: List[int], amount: int) -> int:$/;"	m	class:Solution	typeref:typename:int
+com.github.desertsniper87	java/task_scheduler/src/com/github/desertsniper87/Main.java	/^package com.github.desertsniper87;$/;"	p
+combineSubstring	substring_with_concatenation_of_all_words.py	/^    def combineSubstring(self):$/;"	m	class:Solution
+count	coin-change.2.py	/^def count(S, m, n):$/;"	f
+count	coin-change.3.py	/^def count(S, m, n):$/;"	f
+course_schedule	go/207_course_schedule/course_schedule.go	/^package course_schedule$/;"	p
+course_schedule	go/207_course_schedule/course_schedule_test.go	/^package course_schedule$/;"	p
+createNode	longest-univalue-path.py	/^    def createNode(self, node):$/;"	m	class:Solution
+dailyTemperatures	daily-temperatures.py	/^    def dailyTemperatures(self, temperatures):$/;"	m	class:Solution
+deepestLeavesSum	deepest-leaves-sum.py	/^    def deepestLeavesSum(self, root: TreeNode) -> int:$/;"	m	class:Solution	typeref:typename:int
+e4a56bd5-d850-436e-b7f8-03bff2c7369c	.idea/workspace.xml	/^      <changelist id="e4a56bd5-d850-436e-b7f8-03bff2c7369c" name="Changes" comment="" \/>$/;"	i
+e4a56bd5-d850-436e-b7f8-03bff2c7369c	.idea/workspace.xml	/^    <list default="true" id="e4a56bd5-d850-436e-b7f8-03bff2c7369c" name="Changes" comment="">$/;"	i
+findCircleNum	number-of-provinces.py	/^    def findCircleNum(self, isConnected: List[List[int]]) -> int:$/;"	m	class:Solution	typeref:typename:int
+findMedianSortedArrays	median-of-two-sorted-arrays.py	/^    def findMedianSortedArrays(self, nums1, nums2):$/;"	m	class:Solution
+findMin	find-minimum-in-rotated-sorted-array.py	/^    def findMin(self, nums: List[int]) -> int:$/;"	m	class:Solution	typeref:typename:int
+findOrder	course-schedule-ii.py	/^    def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:$/;"	m	class:Solution	typeref:typename:List[int]
+findRepeatedLetter	substring_with_concatenation_of_all_words.py	/^    def findRepeatedLetter(self):$/;"	m	class:Solution
+findSmallestSetOfVertices	minimum-number-of-vertices-to-reach-all-nodes.py	/^    def findSmallestSetOfVertices(self, n: int, edges: List[List[int]]) -> List[int]:$/;"	m	class:Solution	typeref:typename:List[int]
+findSubstring	substring_with_concatenation_of_all_words.py	/^    def findSubstring(self, s: str, words: List[str]) -> List[int]:$/;"	m	class:Solution	typeref:typename:List[int]
+find_all	substring_with_concatenation_of_all_words.py	/^    def find_all(self, string, substr):$/;"	m	class:Solution
+first_multiple_input	journey-to-the-moon.py	/^    first_multiple_input = input().rstrip().split()$/;"	v
+fptr	journey-to-the-moon.py	/^    fptr = open(os.environ['OUTPUT_PATH'], 'w')$/;"	v
+genGraph	unique-paths-iii.py	/^    def genGraph(self, grid: List[List[int]]) -> Node:$/;"	m	class:Solution	typeref:typename:Node
+getDeepestLeaves	deepest-leaves-sum.py	/^    def getDeepestLeaves(self, root: TreeNode, h, maxDepth) -> int:$/;"	m	class:Solution	typeref:typename:int
+getIncomingEdges	go/207_course_schedule/course_schedule.go	/^func getIncomingEdges(graph map[int][]int, vertex int) []int {$/;"	f	package:course_schedule	typeref:typename:[]int
+getMaxDepth	deepest-leaves-sum.py	/^    def getMaxDepth(self, root: TreeNode) -> int:$/;"	m	class:Solution	typeref:typename:int
+getNode	construct-binary-search-tree-from-preorder-traversal.py	/^    def getNode(self, node: TreeNode, val: int) -> TreeNode:$/;"	m	class:Solution	typeref:typename:TreeNode
+grid	max-increase-to-keep-city-skyline.py	/^grid = [[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]$/;"	v
+gridNew	max-increase-to-keep-city-skyline.py	/^gridNew = [ [8, 4, 8, 7],$/;"	v
+groupThePeople	group-the-people-given-the-group-size-they-belong-to.py	/^    def groupThePeople(self, groupSizes: List[int]) -> List[List[int]]:$/;"	m	class:Solution	typeref:typename:List[List[int]]
+hammingDistance	hamming-distance.py	/^    def hammingDistance(self, x, y):$/;"	m	class:Solution
+helper	word_break.py	/^    def helper(self, i: int):$/;"	m	class:Solution
+i	longest-substring-without-repeating-characters.py	/^i = "aab"$/;"	v
+i	longest-substring-without-repeating-characters.py	/^i = "abcabcbb"$/;"	v
+i	longest-substring-without-repeating-characters.py	/^i = "bbbbb"$/;"	v
+i	longest-substring-without-repeating-characters.py	/^i = "c"$/;"	v
+i	longest-substring-without-repeating-characters.py	/^i = "dvdf"$/;"	v
+i	longest-substring-without-repeating-characters.py	/^i = "pwwkew"$/;"	v
+inorderTraversal	binary-tree-inorder-traversal.py	/^    def inorderTraversal(self, root, l=[]):$/;"	m	class:Solution
+inorderTraversal	longest-univalue-path.py	/^    def inorderTraversal(self, root, l=[]):$/;"	m	class:Solution
+input	course-schedule-ii.py	/^    input = [$/;"	v
+input	keys-and-rooms.py	/^    input = [$/;"	v
+insert	longest-univalue-path.py	/^    def insert(self, treeNode, newNodeData):$/;"	m	class:Solution
+isCycle	go/207_course_schedule/course_schedule.go	/^func isCycle(graph map[int][]int, inDegree map[int]int, numCourses int) bool {$/;"	f	package:course_schedule	typeref:typename:bool
+isPalindrome	prime-palindrome.py	/^    def isPalindrome(self, n: int) -> bool:$/;"	m	class:Solution	typeref:typename:bool
+isPrime	prime-palindrome.py	/^    def isPrime(self, n):$/;"	m	class:Solution
+journeyToMoon	journey-to-the-moon.py	/^def journeyToMoon(n, astronaut):$/;"	f
+leastInterval	java/task_scheduler/src/com/github/desertsniper87/Main.java	/^    public int leastInterval(char[] tasks, int n) {$/;"	m	class:Solution
+lengthOfLIS	longest-increasing-subsequence.py	/^    def lengthOfLIS(self, nums: List[int]) -> int:$/;"	m	class:Solution	typeref:typename:int
+lengthOfLongestSubstring	longest-substring-without-repeating-characters.py	/^    def lengthOfLongestSubstring(self, s):$/;"	m	class:Solution
+longestUnivaluePath	longest-univalue-path-new.py	/^    def longestUnivaluePath(self, root, l=[], res=0):$/;"	m	class:Solution
+longestUnivaluePath	longest-univalue-path.py	/^    def longestUnivaluePath(self, root):$/;"	m	class:Solution
+m	coin-change.2.py	/^m = len(arr)$/;"	v
+m	coin-change.3.py	/^m = len(arr)$/;"	v
+main	go/rain_water/main.go	/^func main() {$/;"	f	package:main
+main	go/rain_water/main.go	/^package main$/;"	p
+main	java/task_scheduler/src/com/github/desertsniper87/Main.java	/^    public static void main(String[] args) {$/;"	m	class:Main
+main	substring-with-concatenation-of-all-words-test.py	/^def main():$/;"	f
+main	trapping_rain_water_test.py	/^def main():$/;"	f
+makeTree	longest-univalue-path.py	/^    def makeTree(self, l):$/;"	m	class:Solution
+max	go/rain_water/main.go	/^func max(a, b int) int {$/;"	f	package:main	typeref:typename:int
+maxArea	container-with-most-water.py	/^    def maxArea(self, height: List[int]) -> int:$/;"	m	class:Solution	typeref:typename:int
+maxIncreaseKeepingSkyline	max-increase-to-keep-city-skyline.py	/^    def maxIncreaseKeepingSkyline(self, grid):$/;"	m	class:Solution
+maxProduct	maximum-product-subarray.py	/^    def maxProduct(self, A):$/;"	m	class:Solution
+maxProfit	buy-sell-stock.py	/^    def maxProfit(self, prices: List[int]) -> int:$/;"	m	class:Solution	typeref:typename:int
+maxSubArray	maximum-subarray.py	/^    def maxSubArray(self, nums: List[int]) -> int:$/;"	m	class:Solution	typeref:typename:int
+maxSubArrayGreedy	maximum-subarray.py	/^    def maxSubArrayGreedy(self, nums: List[int]) -> int:$/;"	m	class:Solution	typeref:typename:int
+min	go/rain_water/main.go	/^func min(a, b int) int {$/;"	f	package:main	typeref:typename:int
+minOperations	minimum-operations-to-make-array-equal.py	/^    def minOperations(self, n: int) -> int:$/;"	m	class:Solution	typeref:typename:int
+minPartitions	partitioning-into-minimum-number-of-deci-binary-numbers.py	/^    def minPartitions(self, n: str) -> int:$/;"	m	class:Solution	typeref:typename:int
+n	coin-change.2.py	/^n = 11$/;"	v
+n	coin-change.3.py	/^n = 11$/;"	v
+n	journey-to-the-moon.py	/^    n = int(first_multiple_input[0])$/;"	v
+nums	3sum.py	/^nums = [82597, -9243, 62390, 83030, -97960, -26521, -61011, 83390, -38677, 12333, 75987, 46091, /;"	v
+nums	find-minimum-in-rotated-sorted-array.py	/^    nums = [11,13,15,17];print(s.findMin(nums))$/;"	v
+nums	house_robber.py	/^    nums = [1] ; print(s.rob(nums))$/;"	v
+nums	maximum-product-subarray.py	/^    nums = [2,3,-2,4]; print(s.maxProduct(nums))$/;"	v
+nums	maximum-subarray.py	/^    nums = [-1]; print(s.maxSubArray(nums))/;"	v
+nums	maximum-subarray.py	/^    nums = [-2,1,-3,4,-1,2,1,-5,4]; print(s.maxSubArray(nums))$/;"	v
+nums	maximum-subarray.py	/^    nums = [1]; print(s.maxSubArray(nums))$/;"	v
+nums	maximum-subarray.py	/^    nums = [5, 4, -1, 7, 8]; print(s.maxSubArray(nums))$/;"	v
+nums	search-in-rotated-sorted-array.py	/^    nums = [1,2];print(s.search(nums, 1))$/;"	v
+nums	search-in-rotated-sorted-array.py	/^    nums = [11, 13, 15, 17];print(s.search(nums, 15))$/;"	v
+nums	search-in-rotated-sorted-array.py	/^    nums = [1];print(s.search(nums, 1))$/;"	v
+nums	search-in-rotated-sorted-array.py	/^    nums = [2,1];print(s.search(nums, 1))$/;"	v
+nums	search-in-rotated-sorted-array.py	/^    nums = [2,3,4,5,1];print(s.search(nums, 6))$/;"	v
+nums	search-in-rotated-sorted-array.py	/^    nums = [3,1];print(s.search(nums, 0))$/;"	v
+nums	search-in-rotated-sorted-array.py	/^    nums = [3,4,5,1,2];print(s.search(nums, 3))$/;"	v
+nums	search-in-rotated-sorted-array.py	/^    nums = [4,5,6,7,0,1,2];print(s.search(nums, 0))$/;"	v
+nums	search-in-rotated-sorted-array.py	/^    nums = [4,5,6,7,0,1,2];print(s.search(nums, 6))$/;"	v
+nums	search-in-rotated-sorted-array.py	/^    nums = [5,1,2,3,4];print(s.search(nums, 1))$/;"	v
+nums	search-in-rotated-sorted-array.py	/^    nums = [5,1,2,3,4];print(s.search(nums, 4))$/;"	v
+nums	search-in-rotated-sorted-array.py	/^    nums = [9,1,2,3,4];print(s.search(nums, 5))$/;"	v
+nums	two-sum.py	/^nums = [3,3]$/;"	v
+nums1	median-of-two-sorted-arrays.py	/^nums1 = [1, 2]$/;"	v
+nums1	median-of-two-sorted-arrays.py	/^nums1 = [1, 3]$/;"	v
+nums1	median-of-two-sorted-arrays.py	/^nums1 = []$/;"	v
+nums2	median-of-two-sorted-arrays.py	/^nums2 = [1]$/;"	v
+nums2	median-of-two-sorted-arrays.py	/^nums2 = [2]$/;"	v
+nums2	median-of-two-sorted-arrays.py	/^nums2 = [3, 4]$/;"	v
+p	journey-to-the-moon.py	/^    p = int(first_multiple_input[1])$/;"	v
+partitionLabels	partition-labels.py	/^    def partitionLabels(self, S):$/;"	m	class:Solution
+permute	permutations.py	/^    def permute(self, nums, i=0):$/;"	m	class:Solution
+primePalindrome	prime-palindrome.py	/^    def primePalindrome(self, n: int) -> int:$/;"	m	class:Solution	typeref:typename:int
+r	array-partition-i.py	/^r = s.arrayPairSum(x)$/;"	v
+rainwaterTest	trapping_rain_water_test.py	/^class rainwaterTest(unittest.TestCase):$/;"	c
+result	journey-to-the-moon.py	/^    result = journeyToMoon(n, astronaut)$/;"	v
+reverseVowels	reverse-vowels-of-a-string.py	/^    def reverseVowels(self, s: str) -> str:$/;"	f	typeref:typename:str
+rob	house_robber.py	/^    def rob(self, nums: List[int]) -> int:$/;"	m	class:Solution	typeref:typename:int
+root	longest-univalue-path.py	/^    root = t.makeTree(x)$/;"	v
+s	3sum.py	/^s = Solution()$/;"	v
+s	all-possible-full-binary-trees.py	/^    s = Solution()$/;"	v
+s	array-partition-i.py	/^s = Solution()$/;"	v
+s	coin-change.py	/^    s = Solution();$/;"	v
+s	container-with-most-water.py	/^    s = Solution()$/;"	v
+s	course-schedule-ii.py	/^    s = Solution()$/;"	v
+s	daily-temperatures.py	/^s = Solution()$/;"	v
+s	find-first-and-last-position-of-element-in-sorted-array.py	/^s = Solution()$/;"	v
+s	find-minimum-in-rotated-sorted-array.py	/^    s = Solution()$/;"	v
+s	hamming-distance.py	/^s = Solution()$/;"	v
+s	house_robber.py	/^    s = Solution()$/;"	v
+s	keys-and-rooms.py	/^    s = Solution()$/;"	v
+s	longest-increasing-subsequence.py	/^s = Solution() $/;"	v
+s	longest-substring-without-repeating-characters.py	/^s = Solution()$/;"	v
+s	max-increase-to-keep-city-skyline.py	/^s = Solution()$/;"	v
+s	maximum-product-subarray.py	/^    s = Solution()$/;"	v
+s	maximum-subarray.py	/^    s = Solution()$/;"	v
+s	median-of-two-sorted-arrays.py	/^import statistics as s$/;"	I	nameref:module:statistics
+s	minimum-number-of-vertices-to-reach-all-nodes.py	/^    s = Solution()$/;"	v
+s	minimum-operations-to-make-array-equal.py	/^    s = Solution()$/;"	v
+s	partition-labels.py	/^s = Solution()$/;"	v
+s	partitioning-into-minimum-number-of-deci-binary-numbers.py	/^    s = Solution()$/;"	v
+s	permutations.py	/^s = Solution()$/;"	v
+s	search-in-rotated-sorted-array.py	/^    s = Solution()$/;"	v
+s	transpose-matrix.py	/^s = Solution()$/;"	v
+s	two-sum.py	/^s = Solution()$/;"	v
+s	word_break.py	/^    s = "a"; wordDict = ["a"]; print(sol.wordBreak(s, wordDict))$/;"	v
+search	search-in-rotated-sorted-array.py	/^    def search(self, nums: List[int], target: int) -> int:$/;"	m	class:Solution	typeref:typename:int
+searchRange	find-first-and-last-position-of-element-in-sorted-array.py	/^    def searchRange(self, nums: List[int], target: int) -> List[int]:$/;"	m	class:Solution	typeref:typename:List[int]
+setUp	substring-with-concatenation-of-all-words-test.py	/^    def setUp(self):$/;"	m	class:StringTest
+setUp	trapping_rain_water_test.py	/^    def setUp(self):$/;"	m	class:rainwaterTest
+so	median-of-two-sorted-arrays.py	/^so = Solution()$/;"	v
+sol	word_break.py	/^    sol = Solution()$/;"	v
+sortColors	sort-colors.py	/^    def sortColors(self, nums: List[int]) -> None:$/;"	m	class:Solution	typeref:typename:None
+subsets	subsets.py	/^    def subsets(self, nums: List[int]) -> List[List[int]]:$/;"	m	class:Solution	typeref:typename:List[List[int]]
+t	longest-univalue-path.py	/^    t = Solution()$/;"	v
+target	two-sum.py	/^target = 6$/;"	v
+temperatures	daily-temperatures.py	/^temperatures = [73, 74, 75, 71, 69, 72, 76, 73]$/;"	v
+test1	trapping_rain_water_test.py	/^    def test1(self):$/;"	m	class:rainwaterTest
+test_string_11	substring-with-concatenation-of-all-words-test.py	/^    def test_string_11(self):$/;"	m	class:StringTest
+threeSum	3sum.py	/^    def threeSum(self, nums):$/;"	m	class:Solution
+transpose	transpose-matrix.py	/^    def transpose(self, A):$/;"	m	class:Solution
+trap	go/rain_water/main.go	/^func trap(height []int) int {$/;"	f	package:main	typeref:typename:int
+trap	trapping_rain_water.py	/^    def trap(self, height: List[int]) -> int:$/;"	m	class:Solution	typeref:typename:int
+twoSum	two-sum.py	/^    def twoSum(self, nums, target):$/;"	m	class:Solution
+uniVal	longest-univalue-path.py	/^    def uniVal(self, treeNode, l=[], res=0):$/;"	m	class:Solution
+uniquePathsIII	unique-paths-iii.py	/^    def uniquePathsIII(self, grid: List[List[int]]) -> int:$/;"	m	class:Solution	typeref:typename:int
+wordBreak	word_break.py	/^    def wordBreak(self, s: str, wordDict: List[str]) -> bool:$/;"	m	class:Solution	typeref:typename:bool
+wordDict	word_break.py	/^    s = "a"; wordDict = ["a"]; print(sol.wordBreak(s, wordDict))$/;"	v
+x	array-partition-i.py	/^x = [1, 4, 3, 2]$/;"	v
+x	coin-change.3.py	/^x = count(arr, m, n)$/;"	v
+x	hamming-distance.py	/^x, y = 1, 2$/;"	v
+x	partition-labels.py	/^x = "ababcbacadefegdehijhklij"$/;"	v
+x	transpose-matrix.py	/^x = [[1,2,3],[4,5,6],[7,8,9]]$/;"	v
+x	two-sum.py	/^x = s.twoSum(nums, target)$/;"	v
+xx	longest-univalue-path.py	/^xx = [[5,4,5,1,1,5],\\$/;"	v
+y	hamming-distance.py	/^x, y = 1, 2$/;"	v
