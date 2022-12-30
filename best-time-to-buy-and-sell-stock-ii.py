@@ -6,8 +6,8 @@ class Solution:
 
         bought =  False
 
-        min = 0
-        max = 0
+        minimum = prices[0]
+        maximum = 0
         
         profit = 0
 
@@ -16,12 +16,20 @@ class Solution:
             next = prices[i+1]
 
             if next > prev:
-                max = next
+                bought = True
+                maximum = next
+                minimum = min(prev, minimum)
 
+            elif bought:
+                profit += (maximum - minimum)
+                minimum = prev
+                bought = False
 
             else:
-                profit += (max - min)
-                min = -1
+                minimum = next
+
+        if bought:
+            profit += (maximum-minimum)
 
         return profit
 
@@ -30,6 +38,8 @@ class Solution:
 
 if __name__ == "__main__":
     s = Solution()
-    print(s.maxProfit([7,1,5,3,6,4]))
-    print(s.maxProfit([1,2,3,4,5]))
+    # print(s.maxProfit([7,1,5,3,6,4]))
+    # print(s.maxProfit([1,2,3,4,5]))
+    # print(s.maxProfit([1,2,1,4,5]))
+    print(s.maxProfit([7,6,4,3,1]))
 
