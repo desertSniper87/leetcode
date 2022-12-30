@@ -7,11 +7,9 @@ class Solution:
 
         for i in range(len(s)-1, -1, -1):
             for word in wordDict:
-                # print(dp, s[i:i+len(word)], word, i+len(word))
                 dp[i] = (s[i:i+len(word)] == word) and dp[i+len(word)]
                 if dp[i]:
                     break
-            #  print(dp)
 
         return dp[0]
 
