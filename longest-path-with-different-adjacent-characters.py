@@ -1,11 +1,11 @@
 from typing import List, Optional
 
 class Node:
-    def __init__(self, val:str, pos=0):
+    def __init__(self, val:str, pos:int):
       self.left = None
       self.right = None
       self.val = val
-      self.pos = pos
+      self.position = pos
 
 class Solution:
 
@@ -14,24 +14,33 @@ class Solution:
             if not node:
                 return None
 
-            if node.val == position:
+            if node.position == position:
                 return node
 
             return get_node(node.left, position) or get_node(node.right, position)
 
+        root = Node('None', 0)
+
             
 
-        for (val, pos) in zip(s, parent):
-            if pos == -1:
-                root = Node(val)
+        for i, (val, parent_position) in enumerate(zip(s, parent)):
+            if parent_position == -1:
+                root = Node(val, i)
                 continue
             
-            new_node = Node(val)
-            #  prev_node = get_node(va
+            new_node = Node(val, i)
+            prev_node = get_node(root, parent_position)
 
+            if prev_node is None:
+                return
 
+            if prev_node.left is None:
+                prev_node.left = new_node
 
+            else:
+                prev_node.right = new_node
 
+        print(root)
 
 
 if __name__ == "__main__":
