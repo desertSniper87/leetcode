@@ -1,5 +1,8 @@
 from typing import List, Optional
 
+"""
+:problem_link: https://leetcode.com/problems/longest-path-with-different-adjacent-characters/
+"""
 
 class Node:
     def __init__(self, val: str, pos: int):
@@ -10,8 +13,18 @@ class Node:
 
 
 class Solution:
+    def calculate_distance(self, node: Optional[Node]):
+        if not node:
+            return 0
+        # elif node.val == 'c':
+        #     print(node.val)
+
+        return 1 + self.calculate_distance(node.left) + self.calculate_distance(node.right)
+
     def dfs(self, node: Node, visited: set[int]):
         print(f"visiting {node.val}")
+
+        print(self.calculate_distance(node))
 
         visited.add(node.position)
 
