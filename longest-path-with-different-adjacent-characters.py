@@ -19,9 +19,17 @@ class Solution:
         # elif node.val == 'c':
         #     print(node.val)
 
-        return 1 + self.calculate_distance(node.left) + self.calculate_distance(node.right)
+        val = 0
 
-    def dfs(self, node: Node, visited: set[int]):
+        if node.left and node.val == node.left.val:
+            val += self.calculate_distance(node.left)
+
+        if node.right and node.val == node.right.val:
+            val += self.calculate_distance(node.right)
+
+        return 1 + val
+
+    def dfs(self, node: Node, visited: set[int], max_distance=0) -> int:
         print(f"visiting {node.val}")
 
         print(self.calculate_distance(node))
@@ -29,10 +37,12 @@ class Solution:
         visited.add(node.position)
 
         if node.left and node.left.val not in visited:
-            self.dfs(node.left, visited)
+            max_distance = max(max_distance, self.dfs(node.left, visited, max_distance))
 
         if node.right and node.right.val not in visited:
-            self.dfs(node.right, visited)
+            max_distance = max(max_distance, self.dfs(node.right, visited, max_distance))
+
+        return max_distance
 
     def longestPath(self, parent: List[int], s: str) -> Optional[int]:
         def get_node(node: Optional[Node], position: int):
@@ -64,7 +74,7 @@ class Solution:
                 prev_node.right = new_node
 
         # print(root)
-        self.dfs(root, set())
+        return self.dfs(root, set()) + 1
 
 if __name__ == "__main__":
     s = Solution()
