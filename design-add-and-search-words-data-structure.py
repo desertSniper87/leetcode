@@ -25,15 +25,25 @@ class WordDictionary:
         for child in node.children.values():
             self.dfs(child, prefix + node.char)
 
-    def search(self, x: str) -> bool:
+    def check(self, string, node):
+        if string[0] == node.char:
+            return self.search(string[1:]. no)
+
+    def search(self, string: str, node=None) -> bool:
         self.output = []
-        node = self.root
-        
-        for char in x:
+        l = len(string)
+
+        if not node:
+            node = self.root
+
+
+        for i in range(l):
+            char = string[i]
+
             if char == '.':
                 for n in node.children:
-                    return self.search(char)
-    
+                    return self.check(string[i+1:], node=node)
+
             elif char in node.children:
                 node = node.children[char]
             else:
@@ -60,21 +70,34 @@ class TrieNode:
         self.counter = 0
         self.children = {}
 
+    def __str__(self):
+        if self.is_end:
+            return f'{self.char} {self.is_end}'
+        else:
+            return self.char
+
 
 if __name__ == "__main__":
     action = ["WordDictionary","addWord","addWord","addWord","search","search","search","search"]
     words = [[],["bad"],["dad"],["mad"],["pad"],["bad"],[".ad"],["b.."]]
 
+    # action = ["WordDictionary","addWord","addWord","addWord","addWord","search","search","addWord","search","search","search","search","search","search"]
+    # words = [[],["at"],["and"],["an"],["add"],["a"],[".at"],["bat"],[".at"],["an."],["a.d."],["b."],["a.d"],["."]]
+
     t = WordDictionary()
+    res = None
 
     for (a, w) in zip(action, words):
+        print(a, w)
         match a:
             case "WordDictionary":
                 t = WordDictionary()
             case "addWord":
-                t.addWord(*w)
+                res = t.addWord(*w)
             case "search":
-                t.search(*w)
+                res = t.search(*w)
+
+        print(res)
 
     
 
