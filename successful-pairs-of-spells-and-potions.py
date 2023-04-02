@@ -4,6 +4,7 @@ from bisect import bisect_left
 class Solution:
     def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
         res = []
+        potions = sorted(potions)
         l = len(potions)
         for s in spells:
             x = success / s
