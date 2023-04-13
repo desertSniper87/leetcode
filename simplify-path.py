@@ -6,27 +6,33 @@ class Solution:
         i, j, l = 0, 0, len(path)
         stack = []
 
+        def handleVal(val):
+            if val == '..':
+                if stack:
+                    stack.pop()
+            elif val == '.':
+                pass
+            elif val: 
+                stack.append(val)
+
+
         while i < l:
             if path[i] == SLASH:
-                if path[j] == SLASH and i != j+1:
-                    stack.append(path[j+1:i])
-
-                elif path[j] == DOT:
-                    pass
-                j = i
-
-            elif path[i] == DOT:
-                if path[j] == DOT:
-                    stack.pop()
+                if path[j] == SLASH:
+                    val = path[j+1:i]
+                    handleVal(val)
 
                 j = i
-
             i += 1
+        else:
+            val = path[j+1:]
+            handleVal(val)
+
 
         last_char = path[j+1:i]
 
-        if last_char != '':
-            stack.append(last_char)
+        #  if last_char != '':
+            #  stack.append(last_char)
 
         if not stack:
             return '/'
@@ -48,6 +54,10 @@ if __name__ == "__main__":
     print(s.simplifyPath("/home//foo/"))
     print(s.simplifyPath("/a/../../b/../c//.//"))
     print(s.simplifyPath("/"))
+    print(s.simplifyPath("/... "))
+    print(s.simplifyPath("/home"))
+    print(s.simplifyPath("/a//b////c/d//././/.."))
+    print(s.simplifyPath("/."))
     
     
     
