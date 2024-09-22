@@ -1,52 +1,41 @@
 from typing import List
 
-
-class Node:
-    def __init__(self, value):
-        self.operator = value
-        self.left = None
-        self.right = None
-
-    def __str__(self):
-        return str(self.operator) + " " + str(self.left) + " " + str(self.right)
+operations = {
+    "+": lambda x, y: x + y,
+    "-": lambda x, y: x - y,
+    "*": lambda x, y: x * y,
+}
 
 
 class Solution:
-    def build_tree(self, expression):
-        token_queue = []
-        operator_stack = []
-        operators = set(["+", "-", "*", "/"])
-
-        for char in expression:
-            if char in operators:
-                operator_stack.append(char)
-            else:
-                token_queue.append(char)
-
-        for operator in operator_stack:
-            left = token_queue.pop(0)
-            right = token_queue.pop(0)
-            print(f"left: {left}, right: {right}, operator: {operator}")
-            node = Node(operator)
-            node.left = left
-            node.right = right
-            token_queue.append(node)
-
-            # else:
-            #     token_queue.append(char)
-
-        return token_queue[0] if token_queue else None
-
-    def print_tree(self, node, level=0):
-        if node is not None:
-            print("  " * level + str(node.value))
-            self.print_tree(node.left, level + 1)
-            self.print_tree(node.right, level + 1)
-
     def diffWaysToCompute(self, expression: str) -> List[int]:
-        pass
+        print(f"expression: {expression}")
+        results = []
+        if len(expression) == 0:
+            return results
+
+        elif len(expression) == 1 or (
+            len(expression) == 2 and expression[0].isdigit()
+        ):
+            return [int(expression)]
+
+        for ex, e in enumerate(expression):
+            print(f"e: {e}")
+            if e.isdigit():
+                continue
+
+            left_items = self.diffWaysToCompute(expression[:ex])
+            right_items = self.diffWaysToCompute(expression[ex + 1 :])
+            print(f"left_items: {left_items}, right_items: {right_items}")
+
+            results.extend(
+                operations[e](left, right)
+                for left in left_items
+                for right in right_items
+            )
+        return results
 
 
 s = Solution()
-# s.build_tree("3+4*2-1")
-s.build_tree("2-1-1")
+# print(s.diffWaysToCompute("2-1-1"))
+print(s.diffWaysToCompute("2*3-4*5"))
