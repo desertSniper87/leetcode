@@ -1,4 +1,3 @@
-import math
 from typing import List
 
 
@@ -12,28 +11,26 @@ def get_digits(number):
 
 class Solution:
     def longestCommonPrefix(self, arr1: List[int], arr2: List[int]) -> int:
-        arrset1 = set(str(x) for x in arr1)
-        arrset2 = set(str(x) for x in arr2)
+        def get_prefixes(num):
+            prefixes = set()
+            while num:
+                prefixes.add(num)
+                num //= 10
+            return prefixes
 
-        def len_(a):
-            return math.floor(math.log10(a)) + 1
+        prefixes1 = set()
+        for num in arr1:
+            prefixes1.update(get_prefixes(num))
 
-        res = 0
-
-        for a1, a2 in [(a1, a2) for a1 in arrset1 for a2 in arrset2]:
-            z = min(len(a1), len(a2))
-            i = 0
-            while z:
-                # print(f'{a1[i]} {a2[i]}')
-                if a1[i] == a2[i]:
-                    i += 1
-                    z -= 1
-                else:
+        max_prefix = 0
+        for num in arr2:
+            while num:
+                if num in prefixes1:
+                    max_prefix = max(max_prefix, len(str(num)))
                     break
+                num //= 10
 
-            res = max(i, res)
-
-        return res
+        return max_prefix
 
 
 if __name__ == '__main__':
