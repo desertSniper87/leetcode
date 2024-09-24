@@ -1,0 +1,10 @@
+line-length = 80
+
+[lint]
+ignore = ['F541']
+# Disable fix for unused imports (`F401`).
+# unfixable = ['F401']
+
+[format]
+# Prefer single quotes over double quotes.
+quote-style = "single"
